@@ -7,6 +7,6 @@ VK.init(function() {
 }, '5.103');
 VK.api("user.get", {"fields": "photo50, city", "v":"5.103"}, function (data) {
 
-    console.log(data.response[o]); 
+    console.log(data.response[0]); 
 
 });
