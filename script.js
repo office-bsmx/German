@@ -5,7 +5,7 @@ VK.init(function() {
      // API initialization failed
      // Can reload page here
 }, '5.103');
-VK.api("user.get", {"fields": "photo50, city", "v":"5.103"}, function (data) {
+VK.api("users.get", {"fields": "photo50, city", "v":"5.103"}, function (data) {
 
     console.log(data.response[0]); 
 
