@@ -21,11 +21,13 @@ if (typeof Object.getPrototypeOf !== "function")
 	{
 		if (window.console && window.console.log)
 			//window.console.log(msg);
+			return
 	};
 	cr.logerror = function (msg)
 	{
 		if (window.console && window.console.error)
 			//window.console.error(msg);
+			return
 	};
 	cr.seal = function(x)
 	{
