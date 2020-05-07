@@ -88,6 +88,7 @@
 		function OnRegisterSWError(e)
 		{
 			//console.warn("Failed to register service worker: ", e);
+			return
 		};
 		
 		window.C2_RegisterSW = function C2_RegisterSW()
@@ -100,6 +101,7 @@
 				.then(function (reg)
 				{
 					//console.log("Registered service worker on " + reg.scope);
+					return
 				})
 				.catch(OnRegisterSWError);
 			}
